@@ -8,9 +8,6 @@
       location = "group:HACFacingLogFwk/HACFacingLogFwk.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:HACFacingLog.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
