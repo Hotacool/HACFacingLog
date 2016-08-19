@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-FE-g3f">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.72369926469943535" green="0.99811483216480346" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="65Z-4s-fGH"/>
+                                    <constraint firstAttribute="width" constant="100" id="TKX-V1-IT2"/>
+                                    <constraint firstAttribute="height" constant="100" id="ni6-v6-J9u"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uu8-BS-YON"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="65Z-4s-fGH"/>
+                                        <exclude reference="TKX-V1-IT2"/>
+                                        <exclude reference="ni6-v6-J9u"/>
+                                        <exclude reference="uu8-BS-YON"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="65Z-4s-fGH"/>
+                                        <include reference="TKX-V1-IT2"/>
+                                        <include reference="ni6-v6-J9u"/>
+                                        <include reference="uu8-BS-YON"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ClickMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1r9-up-VxC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y0J-FE-g3f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PGr-Gv-dH0"/>
+                            <constraint firstItem="Y0J-FE-g3f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mDx-dH-VaD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Y0J-FE-g3f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PGr-Gv-dH0"/>
+                                <exclude reference="mDx-dH-VaD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="Y0J-FE-g3f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PGr-Gv-dH0"/>
+                                <include reference="mDx-dH-VaD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

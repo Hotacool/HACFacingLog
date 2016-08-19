@@ -12,11 +12,11 @@
 
 + (void)install {
     //如果已经连接Xcode调试则不输出到文件
-//    if (isatty(STDOUT_FILENO)) {
-//        return;
-//    }
+    if (isatty(STDOUT_FILENO)) {
+        return;
+    }
 
-#if TARGET_IPHONE_SIMULATOR //TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE //TARGET_OS_IPHONE
     //将NSLog打印信息保存到Document目录下的Log文件夹下
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL fileExists = [fileManager fileExistsAtPath:documentsPath];

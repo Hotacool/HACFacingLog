@@ -60,6 +60,9 @@ SB_ARC_SINGLETON_IMPLEMENT(HACLogServer)
 }
 
 - (GCDWebServerResponse *)createResponseBody :(GCDWebServerRequest* )request {
+    if (![self checkResourceExist]) {
+        return [GCDWebServerDataResponse responseWithText:@"缺少HTML模板"];
+    }
     GCDWebServerResponse *response = nil;
     NSMutableString* string = [[NSMutableString alloc] init];;
     NSString* path = request.path;
@@ -68,7 +71,7 @@ SB_ARC_SINGLETON_IMPLEMENT(HACLogServer)
         [self _appendLogRecordsToString:string afterAbsoluteTime:0.0];
         NSDictionary *dic = @{@"PRODUCT":[NSString stringWithCString:getprogname() encoding:NSUTF8StringEncoding]
                               ,@"CONTENT":string};
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"logTemplete" ofType:@"html"];
+        NSString *filePath = [self getFilePath:@"logTemplete"];
         response = [GCDWebServerDataResponse responseWithHTMLTemplate:filePath variables:dic];
     } else if ([path isEqualToString:HACUrlPath_logAfterTime] && query[HACUrlPath_logAfterTime_queryParam]) {
         double time = [query[HACUrlPath_logAfterTime_queryParam] doubleValue];
@@ -90,11 +93,11 @@ SB_ARC_SINGLETON_IMPLEMENT(HACLogServer)
             [self _appendLogFileToString:string];
             NSDictionary *dic = @{@"PRODUCT":[NSString stringWithCString:getprogname() encoding:NSUTF8StringEncoding]
                                   ,@"CONTENT":string};
-            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"download" ofType:@"html"];
+            NSString *filePath = [self getFilePath:@"download"];
             response = [GCDWebServerDataResponse responseWithHTMLTemplate:filePath variables:dic];
         }
     } else {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"404" ofType:@"html"];
+        NSString *filePath = [self getFilePath:@"404"];
         response = [GCDWebServerDataResponse responseWithHTMLTemplate:filePath variables:nil];
     }
     return response;
@@ -128,5 +131,25 @@ SB_ARC_SINGLETON_IMPLEMENT(HACLogServer)
         const char* style = "color: dimgray;";
         [string appendFormat:@"<p style=\"%s\"><a href=\"/download?name=%@\">%@</a></p>", style, obj, obj];
     }];
+}
+
+#pragma mark -- check
+- (BOOL)checkResourceExist {
+    BOOL __block ret = YES;
+    NSArray *resourceArr = @[@"logTemplete",
+                             @"download",
+                             @"404"];
+    NSString * __block filePath;
+    [resourceArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (!(filePath = [[NSBundle bundleForClass:self.class]pathForResource:obj ofType:@"html"])) {
+            ret = NO;
+            *stop = YES;
+        }
+    }];
+    return ret;
+}
+
+- (NSString*)getFilePath:(NSString*)fileName {
+    return [[NSBundle bundleForClass:self.class]pathForResource:fileName ofType:@"html"];
 }
 @end

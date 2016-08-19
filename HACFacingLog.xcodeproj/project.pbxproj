@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04AC9A06811C6BBF34D8EA27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D30EC18BD6F13DE267CC08E4 /* libPods.a */; };
 		FA34CCED1D65B6EE00080012 /* HACFacingLogCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CCE41D65B6EE00080012 /* HACFacingLogCenter.m */; };
 		FA34CCEE1D65B6EE00080012 /* HACLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CCE61D65B6EE00080012 /* HACLog.m */; };
 		FA34CCEF1D65B6EE00080012 /* HACLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CCE81D65B6EE00080012 /* HACLogFileManager.m */; };
 		FA34CCF01D65B6EE00080012 /* HACLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CCEA1D65B6EE00080012 /* HACLogManager.m */; };
 		FA34CCF11D65B6EE00080012 /* HACLogServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CCEC1D65B6EE00080012 /* HACLogServer.m */; };
-		FA4E7DEA1D53812400D5D7CC /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = FA4E7DE91D53812400D5D7CC /* 404.html */; };
+		FA34CE881D66A45E00080012 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE851D66A45E00080012 /* 404.html */; };
+		FA34CE891D66A45E00080012 /* download.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE861D66A45E00080012 /* download.html */; };
+		FA34CE8A1D66A45E00080012 /* logTemplete.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE871D66A45E00080012 /* logTemplete.html */; };
 		FA7261761D51E4CA00DD35BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7261751D51E4CA00DD35BC /* main.m */; };
 		FA7261791D51E4CB00DD35BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7261781D51E4CB00DD35BC /* AppDelegate.m */; };
 		FA72617C1D51E4CB00DD35BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA72617B1D51E4CB00DD35BC /* ViewController.m */; };
 		FA72617F1D51E4CB00DD35BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA72617D1D51E4CB00DD35BC /* Main.storyboard */; };
 		FA7261811D51E4CB00DD35BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7261801D51E4CB00DD35BC /* Assets.xcassets */; };
 		FA7261841D51E4CB00DD35BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7261821D51E4CB00DD35BC /* LaunchScreen.storyboard */; };
-		FA7261D71D52E64B00DD35BC /* logTemplete.html in Resources */ = {isa = PBXBuildFile; fileRef = FA7261D61D52E64B00DD35BC /* logTemplete.html */; };
-		FA7261DF1D53429200DD35BC /* download.html in Resources */ = {isa = PBXBuildFile; fileRef = FA7261DE1D53429200DD35BC /* download.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		0EE91B8108F621E8CEE36572 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5CC3C8474CAF6C8A76E1B861 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D30EC18BD6F13DE267CC08E4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA34CCE31D65B6EE00080012 /* HACFacingLogCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACFacingLogCenter.h; sourceTree = "<group>"; };
 		FA34CCE41D65B6EE00080012 /* HACFacingLogCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACFacingLogCenter.m; sourceTree = "<group>"; };
 		FA34CCE51D65B6EE00080012 /* HACLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLog.h; sourceTree = "<group>"; };
@@ -52,7 +50,9 @@
 		FA34CCEB1D65B6EE00080012 /* HACLogServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLogServer.h; sourceTree = "<group>"; };
 		FA34CCEC1D65B6EE00080012 /* HACLogServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACLogServer.m; sourceTree = "<group>"; };
 		FA34CD381D65B8EE00080012 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/HACFacingLog-gepdivjsrqabepdgjuxsmohbroly/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
-		FA4E7DE91D53812400D5D7CC /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = SOURCE_ROOT; };
+		FA34CE851D66A45E00080012 /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		FA34CE861D66A45E00080012 /* download.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = download.html; sourceTree = "<group>"; };
+		FA34CE871D66A45E00080012 /* logTemplete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = logTemplete.html; sourceTree = "<group>"; };
 		FA7261711D51E4C900DD35BC /* HACFacingLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HACFacingLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7261751D51E4CA00DD35BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA7261771D51E4CB00DD35BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,8 +65,6 @@
 		FA7261851D51E4CB00DD35BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7261A21D51EF9800DD35BC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FA7261B51D51F64900DD35BC /* libGCDWebServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGCDWebServer.a; path = "../../../Library/Developer/Xcode/DerivedData/HACFacingLog-gepdivjsrqabepdgjuxsmohbroly/Build/Products/Debug-iphonesimulator/libGCDWebServer.a"; sourceTree = "<group>"; };
-		FA7261D61D52E64B00DD35BC /* logTemplete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = logTemplete.html; sourceTree = SOURCE_ROOT; };
-		FA7261DE1D53429200DD35BC /* download.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = download.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AC9A06811C6BBF34D8EA27 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +83,6 @@
 			children = (
 				FA34CD381D65B8EE00080012 /* libPods.a */,
 				FA7261B51D51F64900DD35BC /* libGCDWebServer.a */,
-				D30EC18BD6F13DE267CC08E4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,9 +113,20 @@
 			path = libFacingLog;
 			sourceTree = "<group>";
 		};
+		FA34CE841D66A45E00080012 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA34CE851D66A45E00080012 /* 404.html */,
+				FA34CE861D66A45E00080012 /* download.html */,
+				FA34CE871D66A45E00080012 /* logTemplete.html */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		FA7261681D51E4C900DD35BC = {
 			isa = PBXGroup;
 			children = (
+				FA34CE841D66A45E00080012 /* Resource */,
 				FA34CCE21D65B6EE00080012 /* libFacingLog */,
 				FA7261731D51E4CA00DD35BC /* HACFacingLog */,
 				FA7261721D51E4C900DD35BC /* Products */,
@@ -145,9 +152,6 @@
 				FA72617B1D51E4CB00DD35BC /* ViewController.m */,
 				FA72617D1D51E4CB00DD35BC /* Main.storyboard */,
 				FA7261801D51E4CB00DD35BC /* Assets.xcassets */,
-				FA7261D61D52E64B00DD35BC /* logTemplete.html */,
-				FA7261DE1D53429200DD35BC /* download.html */,
-				FA4E7DE91D53812400D5D7CC /* 404.html */,
 				FA7261821D51E4CB00DD35BC /* LaunchScreen.storyboard */,
 				FA7261851D51E4CB00DD35BC /* Info.plist */,
 				FA7261741D51E4CA00DD35BC /* Supporting Files */,
@@ -226,12 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7261DF1D53429200DD35BC /* download.html in Resources */,
+				FA34CE891D66A45E00080012 /* download.html in Resources */,
+				FA34CE8A1D66A45E00080012 /* logTemplete.html in Resources */,
 				FA7261841D51E4CB00DD35BC /* LaunchScreen.storyboard in Resources */,
-				FA7261D71D52E64B00DD35BC /* logTemplete.html in Resources */,
-				FA4E7DEA1D53812400D5D7CC /* 404.html in Resources */,
 				FA7261811D51E4CB00DD35BC /* Assets.xcassets in Resources */,
 				FA72617F1D51E4CB00DD35BC /* Main.storyboard in Resources */,
+				FA34CE881D66A45E00080012 /* 404.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

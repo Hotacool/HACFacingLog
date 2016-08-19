@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TestHACF/TestHACF.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HACFacingLogFwk/HACFacingLogFwk.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HACFacingLog.xcodeproj">
    </FileRef>
    <FileRef
