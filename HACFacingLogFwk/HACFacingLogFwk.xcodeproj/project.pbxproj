@@ -1,385 +1,1016 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		FA34CE5F1D669E0B00080012 /* HACFacingLogFwk.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE5E1D669E0B00080012 /* HACFacingLogFwk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA34CE6A1D669EC500080012 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA34CE691D669EC500080012 /* libGCDWebServer.a */; };
-		FA34CE761D66A14C00080012 /* HACFacingLogCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE6C1D66A14C00080012 /* HACFacingLogCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA34CE771D66A14C00080012 /* HACFacingLogCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CE6D1D66A14C00080012 /* HACFacingLogCenter.m */; };
-		FA34CE781D66A14C00080012 /* HACLog.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE6E1D66A14C00080012 /* HACLog.h */; };
-		FA34CE791D66A14C00080012 /* HACLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CE6F1D66A14C00080012 /* HACLog.m */; };
-		FA34CE7A1D66A14C00080012 /* HACLogFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE701D66A14C00080012 /* HACLogFileManager.h */; };
-		FA34CE7B1D66A14C00080012 /* HACLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CE711D66A14C00080012 /* HACLogFileManager.m */; };
-		FA34CE7C1D66A14C00080012 /* HACLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE721D66A14C00080012 /* HACLogManager.h */; };
-		FA34CE7D1D66A14C00080012 /* HACLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CE731D66A14C00080012 /* HACLogManager.m */; };
-		FA34CE7E1D66A14C00080012 /* HACLogServer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE741D66A14C00080012 /* HACLogServer.h */; };
-		FA34CE7F1D66A14C00080012 /* HACLogServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34CE751D66A14C00080012 /* HACLogServer.m */; };
-		FA34CE811D66A2B600080012 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = FA34CE801D66A2B600080012 /* PrefixHeader.pch */; };
-		FA34CE8F1D66A47100080012 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE8C1D66A47100080012 /* 404.html */; };
-		FA34CE901D66A47100080012 /* download.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE8D1D66A47100080012 /* download.html */; };
-		FA34CE911D66A47100080012 /* logTemplete.html in Resources */ = {isa = PBXBuildFile; fileRef = FA34CE8E1D66A47100080012 /* logTemplete.html */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		FA34CE5B1D669E0B00080012 /* HACFacingLogFwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HACFacingLogFwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA34CE5E1D669E0B00080012 /* HACFacingLogFwk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HACFacingLogFwk.h; sourceTree = "<group>"; };
-		FA34CE601D669E0B00080012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA34CE691D669EC500080012 /* libGCDWebServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGCDWebServer.a; path = "../../../../Library/Developer/Xcode/DerivedData/HACFacingLog-gepdivjsrqabepdgjuxsmohbroly/Build/Products/Debug-iphonesimulator/libGCDWebServer.a"; sourceTree = "<group>"; };
-		FA34CE6C1D66A14C00080012 /* HACFacingLogCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACFacingLogCenter.h; sourceTree = "<group>"; };
-		FA34CE6D1D66A14C00080012 /* HACFacingLogCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACFacingLogCenter.m; sourceTree = "<group>"; };
-		FA34CE6E1D66A14C00080012 /* HACLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLog.h; sourceTree = "<group>"; };
-		FA34CE6F1D66A14C00080012 /* HACLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACLog.m; sourceTree = "<group>"; };
-		FA34CE701D66A14C00080012 /* HACLogFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLogFileManager.h; sourceTree = "<group>"; };
-		FA34CE711D66A14C00080012 /* HACLogFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACLogFileManager.m; sourceTree = "<group>"; };
-		FA34CE721D66A14C00080012 /* HACLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLogManager.h; sourceTree = "<group>"; };
-		FA34CE731D66A14C00080012 /* HACLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACLogManager.m; sourceTree = "<group>"; };
-		FA34CE741D66A14C00080012 /* HACLogServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACLogServer.h; sourceTree = "<group>"; };
-		FA34CE751D66A14C00080012 /* HACLogServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACLogServer.m; sourceTree = "<group>"; };
-		FA34CE801D66A2B600080012 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
-		FA34CE8C1D66A47100080012 /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
-		FA34CE8D1D66A47100080012 /* download.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = download.html; sourceTree = "<group>"; };
-		FA34CE8E1D66A47100080012 /* logTemplete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = logTemplete.html; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		FA34CE571D669E0B00080012 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA34CE6A1D669EC500080012 /* libGCDWebServer.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		FA34CE511D669E0B00080012 = {
-			isa = PBXGroup;
-			children = (
-				FA34CE6B1D66A14C00080012 /* libFacingLog */,
-				FA34CE8B1D66A47100080012 /* Resource */,
-				FA34CE5D1D669E0B00080012 /* HACFacingLogFwk */,
-				FA34CE681D669EAD00080012 /* Frameworks */,
-				FA34CE5C1D669E0B00080012 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		FA34CE5C1D669E0B00080012 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FA34CE5B1D669E0B00080012 /* HACFacingLogFwk.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FA34CE5D1D669E0B00080012 /* HACFacingLogFwk */ = {
-			isa = PBXGroup;
-			children = (
-				FA34CE801D66A2B600080012 /* PrefixHeader.pch */,
-				FA34CE5E1D669E0B00080012 /* HACFacingLogFwk.h */,
-				FA34CE601D669E0B00080012 /* Info.plist */,
-			);
-			path = HACFacingLogFwk;
-			sourceTree = "<group>";
-		};
-		FA34CE681D669EAD00080012 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA34CE691D669EC500080012 /* libGCDWebServer.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA34CE6B1D66A14C00080012 /* libFacingLog */ = {
-			isa = PBXGroup;
-			children = (
-				FA34CE6C1D66A14C00080012 /* HACFacingLogCenter.h */,
-				FA34CE6D1D66A14C00080012 /* HACFacingLogCenter.m */,
-				FA34CE6E1D66A14C00080012 /* HACLog.h */,
-				FA34CE6F1D66A14C00080012 /* HACLog.m */,
-				FA34CE701D66A14C00080012 /* HACLogFileManager.h */,
-				FA34CE711D66A14C00080012 /* HACLogFileManager.m */,
-				FA34CE721D66A14C00080012 /* HACLogManager.h */,
-				FA34CE731D66A14C00080012 /* HACLogManager.m */,
-				FA34CE741D66A14C00080012 /* HACLogServer.h */,
-				FA34CE751D66A14C00080012 /* HACLogServer.m */,
-			);
-			name = libFacingLog;
-			path = ../libFacingLog;
-			sourceTree = "<group>";
-		};
-		FA34CE8B1D66A47100080012 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				FA34CE8C1D66A47100080012 /* 404.html */,
-				FA34CE8D1D66A47100080012 /* download.html */,
-				FA34CE8E1D66A47100080012 /* logTemplete.html */,
-			);
-			name = Resource;
-			path = ../Resource;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		FA34CE581D669E0B00080012 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA34CE781D66A14C00080012 /* HACLog.h in Headers */,
-				FA34CE761D66A14C00080012 /* HACFacingLogCenter.h in Headers */,
-				FA34CE5F1D669E0B00080012 /* HACFacingLogFwk.h in Headers */,
-				FA34CE7A1D66A14C00080012 /* HACLogFileManager.h in Headers */,
-				FA34CE7C1D66A14C00080012 /* HACLogManager.h in Headers */,
-				FA34CE811D66A2B600080012 /* PrefixHeader.pch in Headers */,
-				FA34CE7E1D66A14C00080012 /* HACLogServer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		FA34CE5A1D669E0B00080012 /* HACFacingLogFwk */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA34CE631D669E0B00080012 /* Build configuration list for PBXNativeTarget "HACFacingLogFwk" */;
-			buildPhases = (
-				FA34CE561D669E0B00080012 /* Sources */,
-				FA34CE571D669E0B00080012 /* Frameworks */,
-				FA34CE581D669E0B00080012 /* Headers */,
-				FA34CE591D669E0B00080012 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HACFacingLogFwk;
-			productName = HACFacingLogFwk;
-			productReference = FA34CE5B1D669E0B00080012 /* HACFacingLogFwk.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		FA34CE521D669E0B00080012 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = silverUp;
-				TargetAttributes = {
-					FA34CE5A1D669E0B00080012 = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 34R23B9JS8;
-					};
-				};
-			};
-			buildConfigurationList = FA34CE551D669E0B00080012 /* Build configuration list for PBXProject "HACFacingLogFwk" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = FA34CE511D669E0B00080012;
-			productRefGroup = FA34CE5C1D669E0B00080012 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				FA34CE5A1D669E0B00080012 /* HACFacingLogFwk */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		FA34CE591D669E0B00080012 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA34CE901D66A47100080012 /* download.html in Resources */,
-				FA34CE911D66A47100080012 /* logTemplete.html in Resources */,
-				FA34CE8F1D66A47100080012 /* 404.html in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		FA34CE561D669E0B00080012 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA34CE771D66A14C00080012 /* HACFacingLogCenter.m in Sources */,
-				FA34CE7F1D66A14C00080012 /* HACLogServer.m in Sources */,
-				FA34CE7B1D66A14C00080012 /* HACLogFileManager.m in Sources */,
-				FA34CE791D66A14C00080012 /* HACLog.m in Sources */,
-				FA34CE7D1D66A14C00080012 /* HACLogManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		FA34CE611D669E0B00080012 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FA34CE621D669E0B00080012 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FA34CE641D669E0B00080012 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
-				);
-				INFOPLIST_FILE = HACFacingLogFwk/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-l\"z\"";
-				PODS_ROOT = "${SRCROOT}/../Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = HAC.HACFacingLogFwk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FA34CE651D669E0B00080012 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
-				);
-				INFOPLIST_FILE = HACFacingLogFwk/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-l\"z\"";
-				PODS_ROOT = "${SRCROOT}/../Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = HAC.HACFacingLogFwk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		FA34CE551D669E0B00080012 /* Build configuration list for PBXProject "HACFacingLogFwk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA34CE611D669E0B00080012 /* Debug */,
-				FA34CE621D669E0B00080012 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA34CE631D669E0B00080012 /* Build configuration list for PBXNativeTarget "HACFacingLogFwk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA34CE641D669E0B00080012 /* Debug */,
-				FA34CE651D669E0B00080012 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = FA34CE521D669E0B00080012 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>19F249047661A1939933D38D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>../Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1ADD41336FA604C180B946E9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>19F249047661A1939933D38D</string>
+				<string>719531C74D049B94ACCA2AF4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D75487FAE3D15ABD28D6E49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4FB19F80BF28EAE202C1564E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5F84D1C3436E025965DF7065</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>719531C74D049B94ACCA2AF4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>../Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0851B560EBBC379B8513C76</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F84D1C3436E025965DF7065</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE511D669E0B00080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE6B1D66A14C00080012</string>
+				<string>FA34CE8B1D66A47100080012</string>
+				<string>FA34CE5D1D669E0B00080012</string>
+				<string>FA34CE681D669EAD00080012</string>
+				<string>FA34CE5C1D669E0B00080012</string>
+				<string>1ADD41336FA604C180B946E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE521D669E0B00080012</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>silverUp</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>FA34CE5A1D669E0B00080012</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>34R23B9JS8</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>FA34CE551D669E0B00080012</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>FA34CE511D669E0B00080012</string>
+			<key>productRefGroup</key>
+			<string>FA34CE5C1D669E0B00080012</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>FA34CE5A1D669E0B00080012</string>
+			</array>
+		</dict>
+		<key>FA34CE551D669E0B00080012</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FA34CE611D669E0B00080012</string>
+				<string>FA34CE621D669E0B00080012</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FA34CE561D669E0B00080012</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA34CE771D66A14C00080012</string>
+				<string>FA34CE7F1D66A14C00080012</string>
+				<string>FA34CE7B1D66A14C00080012</string>
+				<string>FA34CE791D66A14C00080012</string>
+				<string>FA34CE7D1D66A14C00080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FA34CE571D669E0B00080012</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA34CE6A1D669EC500080012</string>
+				<string>D0851B560EBBC379B8513C76</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FA34CE581D669E0B00080012</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA34CE781D66A14C00080012</string>
+				<string>FA34CE761D66A14C00080012</string>
+				<string>FA34CE5F1D669E0B00080012</string>
+				<string>FA34CE7A1D66A14C00080012</string>
+				<string>FA34CE7C1D66A14C00080012</string>
+				<string>FA34CE811D66A2B600080012</string>
+				<string>FA34CE7E1D66A14C00080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FA34CE591D669E0B00080012</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA34CE901D66A47100080012</string>
+				<string>FA34CE911D66A47100080012</string>
+				<string>FA34CE8F1D66A47100080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FA34CE5A1D669E0B00080012</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FA34CE631D669E0B00080012</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2D75487FAE3D15ABD28D6E49</string>
+				<string>FA34CE561D669E0B00080012</string>
+				<string>FA34CE571D669E0B00080012</string>
+				<string>FA34CE581D669E0B00080012</string>
+				<string>FA34CE591D669E0B00080012</string>
+				<string>4FB19F80BF28EAE202C1564E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>HACFacingLogFwk</string>
+			<key>productName</key>
+			<string>HACFacingLogFwk</string>
+			<key>productReference</key>
+			<string>FA34CE5B1D669E0B00080012</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>FA34CE5B1D669E0B00080012</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>HACFacingLogFwk.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FA34CE5C1D669E0B00080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE5B1D669E0B00080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE5D1D669E0B00080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE801D66A2B600080012</string>
+				<string>FA34CE5E1D669E0B00080012</string>
+				<string>FA34CE601D669E0B00080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>HACFacingLogFwk</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE5E1D669E0B00080012</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACFacingLogFwk.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE5F1D669E0B00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE5E1D669E0B00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FA34CE601D669E0B00080012</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE611D669E0B00080012</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FA34CE621D669E0B00080012</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FA34CE631D669E0B00080012</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FA34CE641D669E0B00080012</string>
+				<string>FA34CE651D669E0B00080012</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FA34CE641D669E0B00080012</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>19F249047661A1939933D38D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrefixHeader.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<array>
+					<string>"${PODS_ROOT}/Headers/Public"</string>
+					<string>"${PODS_ROOT}/Headers/Public/GCDWebServer"</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>HACFacingLogFwk/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-l"z"</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}/../Pods</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>HAC.HACFacingLogFwk</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FA34CE651D669E0B00080012</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>719531C74D049B94ACCA2AF4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrefixHeader.pch</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<array>
+					<string>"${PODS_ROOT}/Headers/Public"</string>
+					<string>"${PODS_ROOT}/Headers/Public/GCDWebServer"</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>HACFacingLogFwk/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-l"z"</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}/../Pods</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>HAC.HACFacingLogFwk</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FA34CE681D669EAD00080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE691D669EC500080012</string>
+				<string>5F84D1C3436E025965DF7065</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE691D669EC500080012</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libGCDWebServer.a</string>
+			<key>path</key>
+			<string>../../../../Library/Developer/Xcode/DerivedData/HACFacingLog-gepdivjsrqabepdgjuxsmohbroly/Build/Products/Debug-iphonesimulator/libGCDWebServer.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE6A1D669EC500080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE691D669EC500080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE6B1D66A14C00080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE6C1D66A14C00080012</string>
+				<string>FA34CE6D1D66A14C00080012</string>
+				<string>FA34CE6E1D66A14C00080012</string>
+				<string>FA34CE6F1D66A14C00080012</string>
+				<string>FA34CE701D66A14C00080012</string>
+				<string>FA34CE711D66A14C00080012</string>
+				<string>FA34CE721D66A14C00080012</string>
+				<string>FA34CE731D66A14C00080012</string>
+				<string>FA34CE741D66A14C00080012</string>
+				<string>FA34CE751D66A14C00080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>libFacingLog</string>
+			<key>path</key>
+			<string>../libFacingLog</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE6C1D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACFacingLogCenter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE6D1D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HACFacingLogCenter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE6E1D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACLog.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE6F1D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HACLog.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE701D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACLogFileManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE711D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HACLogFileManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE721D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACLogManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE731D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HACLogManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE741D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HACLogServer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE751D66A14C00080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HACLogServer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE761D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE6C1D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FA34CE771D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE6D1D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE781D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE6E1D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE791D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE6F1D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7A1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE701D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7B1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE711D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7C1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE721D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7D1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE731D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7E1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE741D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE7F1D66A14C00080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE751D66A14C00080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE801D66A2B600080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PrefixHeader.pch</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>FA34CE811D66A2B600080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE801D66A2B600080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE8B1D66A47100080012</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA34CE8C1D66A47100080012</string>
+				<string>FA34CE8D1D66A47100080012</string>
+				<string>FA34CE8E1D66A47100080012</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resource</string>
+			<key>path</key>
+			<string>../Resource</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE8C1D66A47100080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.html</string>
+			<key>path</key>
+			<string>404.html</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE8D1D66A47100080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.html</string>
+			<key>path</key>
+			<string>download.html</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE8E1D66A47100080012</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.html</string>
+			<key>path</key>
+			<string>logTemplete.html</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA34CE8F1D66A47100080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE8C1D66A47100080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE901D66A47100080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE8D1D66A47100080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA34CE911D66A47100080012</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA34CE8E1D66A47100080012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>FA34CE521D669E0B00080012</string>
+</dict>
+</plist>

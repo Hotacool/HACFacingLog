@@ -18,9 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"HACFacingLogFwk.framework/logTemplete" ofType:@"html"];
-    NSLog(filePath);
-    
 }
 
 - (void)didReceiveMemoryWarning {
