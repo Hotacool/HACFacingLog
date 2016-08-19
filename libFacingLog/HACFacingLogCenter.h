@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-extern Boolean const HACFacingLogLocalServerExist;
-extern int const HACFacingLogLocalServerPort;
+//local server setting
+static Boolean const HACFacingLogLocalServerExist = YES;
+static int const HACFacingLogLocalServerPort = 8081;
 
 @interface HACFacingLogCenter : NSObject
 
-+ (void)startServer ;
-
-+ (void)stopServer ;
++ (void)install ;
 @end

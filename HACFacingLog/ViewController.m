@@ -9,8 +9,6 @@
 #import "ViewController.h"
 #import "HACFacingLogCenter.h"
 
-const int HACFacingLogLocalServerPort = 8080;
-
 @interface ViewController ()
 
 @end
@@ -21,10 +19,6 @@ const int HACFacingLogLocalServerPort = 8080;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     dinf(@"bibibi")
-    //to log to document directory
-    NSString *loggingPath = [documentsPath stringByAppendingPathComponent:@"/mylog.log"];
-    NSError *error;
-    [@"11" writeToFile:loggingPath atomically:YES encoding:NSUTF8StringEncoding error:&error];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +28,7 @@ const int HACFacingLogLocalServerPort = 8080;
 
 - (IBAction)btnClick:(id)sender {
     dinf(@"knock knock!");
-    [HACFacingLogCenter startServer];
+    [HACFacingLogCenter install];
 }
 
 @end
